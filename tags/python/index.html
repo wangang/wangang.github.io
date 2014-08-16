@@ -88,14 +88,22 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>在python创建一个简单类如下：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span>:</span></div><div class="line">	<span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, name, age)</span>:</span></div><div class="line">		self.name = name</div><div class="line">		self.age = age</div><div class="line">	<span class="function"><span class="keyword">def</span> <span class="title">say</span><span class="params">(self)</span>:</span></div><div class="line">		<span class="keyword">print</span> <span class="string">'Hello everyone!My name is %s,I am %d years old!'</span>%(self.name,self.age)</div><div class="line">		</div><div class="line">student = person(<span class="string">'wan'</span>, <span class="number">24</span>)</div><div class="line">student.say()</div></pre></td></tr></table></figure>
+        <ul>
+<li>在Python创建一个简单类如下：</li>
+</ul>
+<figure class="highlight Python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span>:</span> <span class="comment">#创建类</span></div><div class="line">	<span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, name, age)</span>:</span> <span class="comment">#创建构造函数</span></div><div class="line">		self.name = name</div><div class="line">		self.age = age</div><div class="line">	<span class="function"><span class="keyword">def</span> <span class="title">say</span><span class="params">(self)</span>:</span> <span class="comment">#创建函数</span></div><div class="line">		<span class="keyword">print</span> <span class="string">'Hello everyone!My name is %s,I am %d years old!'</span>%(self.name,self.age)</div><div class="line">		</div><div class="line">man = person(<span class="string">'wan'</span>, <span class="number">24</span>) <span class="comment">#进行实例化</span></div><div class="line">man.say()</div></pre></td></tr></table></figure>
+
+<ul>
+<li>我们使用class语句后跟类名，创建了一个新的类Person。在用类定义成对象时，会先调用<strong>init</strong>构造函数，以初始化对象的各属性。如该程序中的name与age。类的各个属性均可以在构造函数中定义，定义时只要加上对象指针就好了。创建类的函数say，实例化一个student，后面调用函数。</li>
+<li>Python类可以继承父类属性，形式为class类名(父类)，子类可以继承父类的所有方法和属性，也可以重载父类的成员函数及属性。</li>
+</ul>
+<figure class="highlight Python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Student</span><span class="params">(Person)</span>:</span> <span class="comment">#继承类Person</span></div><div class="line">	<span class="function"><span class="keyword">def</span> <span class="title">grade</span><span class="params">(self,name,age, grade)</span>:</span></div><div class="line">        self.name = name</div><div class="line">        self.age = age</div><div class="line">		self.grade = grade</div><div class="line">	<span class="function"><span class="keyword">def</span> <span class="title">say</span><span class="params">(self)</span>:</span> <span class="comment">#子类重载函数</span></div><div class="line">		<span class="keyword">print</span> <span class="string">'Hello everyone!My name is %s, I am %d years old!My grades are %d.'</span>%(self.name, self.age, self.grade)</div><div class="line">		</div><div class="line">aStudent = Student(<span class="string">'wan'</span>, <span class="number">24</span>, <span class="number">90</span>)</div><div class="line">aStudent.say()</div></pre></td></tr></table></figure>
 
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://wangang.github.io/2014/08/16/python类的学习/" data-id="ecg90yipmp91dlpb" class="article-share-link">Share</a>
+      <a data-url="http://wangang.github.io/2014/08/16/python类的学习/" data-id="fg3s67tj3u396otz" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/">python</a></li></ul>
