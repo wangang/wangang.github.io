@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Stay hungry,stay foolish!]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://wangang.github.io/"/>
-  <updated>2014-08-16T11:00:22.821Z</updated>
+  <updated>2014-08-16T13:18:41.072Z</updated>
   <id>http://wangang.github.io/</id>
   
   <author>
@@ -46,7 +46,7 @@
     <link href="http://wangang.github.io/2014/08/16/python%E7%B1%BB%E7%9A%84%E5%AD%A6%E4%B9%A0/"/>
     <id>http://wangang.github.io/2014/08/16/python类的学习/</id>
     <published>2014-08-16T04:13:54.000Z</published>
-    <updated>2014-08-16T06:19:34.000Z</updated>
+    <updated>2014-08-16T13:06:50.000Z</updated>
     <content type="html"><![CDATA[<ul>
 <li>在Python创建一个简单类如下：</li>
 </ul>
@@ -61,7 +61,7 @@
 ]]></content>
     
     
-      <category term="python" scheme="http://wangang.github.io/tags/python/"/>
+      <category term="Python" scheme="http://wangang.github.io/tags/Python/"/>
     
   </entry>
   
