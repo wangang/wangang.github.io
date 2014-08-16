@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Stay hungry,stay foolish!]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://wangang.github.io/"/>
-  <updated>2014-08-16T06:24:11.350Z</updated>
+  <updated>2014-08-16T11:00:22.821Z</updated>
   <id>http://wangang.github.io/</id>
   
   <author>
@@ -13,6 +13,33 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Python GUI编程]]></title>
+    <link href="http://wangang.github.io/2014/08/16/Python-GUI%E7%BC%96%E7%A8%8B/"/>
+    <id>http://wangang.github.io/2014/08/16/Python-GUI编程/</id>
+    <published>2014-08-16T07:11:57.000Z</published>
+    <updated>2014-08-16T11:00:14.000Z</updated>
+    <content type="html"><![CDATA[<ul>
+<li>首先我们看一个简单的例子：</li>
+</ul>
+<figure class="highlight Python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> Tkinter <span class="keyword">import</span> *</div><div class="line">root = Tk()</div><div class="line">w = Lable(root, text = <span class="string">'Hello wrold'</span>)</div><div class="line">w.pack()</div><div class="line">root.mainloop()</div></pre></td></tr></table></figure>
+
+<ul>
+<li>我们首先导入Tkinter模块，它包括我们需要的类和函数以及其它的内容。利用第一句既可以简单的导入Tkinter所有到你的模块空间。接下来实例化一个Tk，它是一个很普通windows界面，有一个标题栏以及一些其它的描述。你在每一个程序里面只可以创建一个，而且它是必须首先创建的紧接着我们创建了一个作为root子类的Label。接着调用Pack方法，这就使Lable能够使适应text，而且能够被看到。但是我们必须输入事件循环中。当程序进入事件循环中，直到我们关闭窗口。这些意味着当进入主循环中时，Windows应用窗口即可出现。</li>
+<li>当你写一个很大的程序时，将你的代码做成一个或者多个类，下面这个例子就是将程序作为类。</li>
+</ul>
+<figure class="highlight Python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> Tkinter <span class="keyword">import</span> *</div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">App</span>:</span></div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, master)</span>:</span></div><div class="line">        frame = Frame(master)</div><div class="line">        frame.pack()</div><div class="line">        </div><div class="line">        self.button = Button(frame, text=<span class="string">'quit'</span>, fg=<span class="string">'red'</span>,command=frame.quit)</div><div class="line">        self.button.pack(side = LEFT)</div><div class="line">        self.hi_there = Button(frame, text=<span class="string">'Hello'</span>, command=self.say_hi)</div><div class="line">        self.hi_there.pack(side=LEFT)</div><div class="line">        </div><div class="line">        <span class="function"><span class="keyword">def</span> <span class="title">say_hi</span><span class="params">(self)</span>:</span></div><div class="line">            <span class="keyword">print</span> <span class="string">'hi there,everyone'</span></div><div class="line">            </div><div class="line">root = Tk()</div><div class="line">app = App(root)</div><div class="line">root.mainloop()</div></pre></td></tr></table></figure>
+
+<ul>
+<li><a href="http://effbot.org/tkinterbook/" target="_blank" rel="external">参考文档</a></li>
+</ul>
+]]></content>
+    
+    
+      <category term="Python" scheme="http://wangang.github.io/tags/Python/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[python类的学习]]></title>
@@ -35,23 +62,6 @@
     
     
       <category term="python" scheme="http://wangang.github.io/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[第二周周志]]></title>
-    <link href="http://wangang.github.io/2014/08/10/%E7%AC%AC%E4%BA%8C%E5%91%A8%E5%91%A8%E5%BF%97/"/>
-    <id>http://wangang.github.io/2014/08/10/第二周周志/</id>
-    <published>2014-08-10T03:25:32.000Z</published>
-    <updated>2014-08-10T05:21:26.000Z</updated>
-    <content type="html"><![CDATA[<p>本周学习工作主要是利用VB.net的SerialPort及ZedGraph进行串口数据采集以及实时显示。硬件电路方面采用：单轴角度传感器，arduino，少许杜邦线…单轴角度传感器有三根连接线其中两条电源线，一条输出V_out,arduino用IO口采集角度传感器的输出电压值，采集到的电压根据datasheet里面电压角度换算公式进行运算，然后通过串口将角度值传入PC机。硬件连接：单轴角度传感器VCC、GND分别接入arduino的电源和地，V_out接入analogPin 3 ，完成硬件连接。嵌入式程序如下：</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="preprocessor">#<span class="keyword">include</span>&lt;math&gt;   <span class="comment">//调用数学库，后面要用arcsin</span></span></div><div class="line"><span class="keyword">int</span> readPin = <span class="number">3</span>; <span class="comment">//设置V_out 引脚为analogPin 3</span></div><div class="line"><span class="keyword">int</span> value = <span class="number">0</span>;   <span class="comment">//中间值</span></div><div class="line"><span class="keyword">float</span> V_out = <span class="number">0</span>; <span class="comment">//电压值</span></div><div class="line"><span class="keyword">float</span> angle = <span class="number">0</span>;<span class="comment">//角度值</span></div><div class="line"><span class="keyword">void</span> setup()</div><div class="line">{</div><div class="line">  Serial.begin(<span class="number">19200</span>);<span class="comment">//串口开始，波特率为19200</span></div><div class="line">}</div><div class="line"><span class="keyword">void</span> loop()</div><div class="line">{</div><div class="line">  value = analogRead(readPin);<span class="comment">//得到IO口的数值</span></div><div class="line">  V_out = value*(<span class="number">5.0</span>/<span class="number">1023</span>);<span class="comment">//转化为电压值</span></div><div class="line">  angle = <span class="built_in">asin</span>(<span class="number">0.5</span>*V_out-<span class="number">1.25</span>)*<span class="number">180</span>/PI;<span class="comment">//参照datasheet 电压角度转化公式</span></div><div class="line">  Serial.print (angle);<span class="comment">//串口输出角度</span></div><div class="line">  delay(<span class="number">1000</span>);<span class="comment">//延时1S</span></div><div class="line">}</div></pre></td></tr></table></figure>
-
-<p>上位机程序用VB.net编写，主要采用Serialport及ZedGraph进行编写。Serialport类用于控制串口端口文件资源，提供同步I/O和事件驱动I/O。以下列举一些常用的属性、方法及事件：<br>属性：BaudRates(串口数据传输波特率设置)，DataBits(每个字节的标准数据长度)<br>方法：GetPortNames(获取当前计算机的串口名称数组)，Open（打开一个新的串口连接）<br>事件：DataReceived（表示将处理SerialPort对象的数据接收事件的方法）<br>zedGraph是一个非常优秀的开源的作图控件。</p>
-]]></content>
-    
-    
-      <category term="周志" scheme="http://wangang.github.io/tags/%E5%91%A8%E5%BF%97/"/>
     
   </entry>
   
