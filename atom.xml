@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Stay hungry,stay foolish!]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://wangang.github.io/"/>
-  <updated>2014-08-16T15:07:40.598Z</updated>
+  <updated>2014-08-19T13:35:59.859Z</updated>
   <id>http://wangang.github.io/</id>
   
   <author>
@@ -13,6 +13,26 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[暑假结束，开始新的学习]]></title>
+    <link href="http://wangang.github.io/2014/08/19/%E6%9A%91%E5%81%87%E7%BB%93%E6%9D%9F%EF%BC%8C%E5%BC%80%E5%A7%8B%E6%96%B0%E7%9A%84%E5%AD%A6%E4%B9%A0/"/>
+    <id>http://wangang.github.io/2014/08/19/暑假结束，开始新的学习/</id>
+    <published>2014-08-19T11:44:41.000Z</published>
+    <updated>2014-08-19T13:33:37.000Z</updated>
+    <content type="html"><![CDATA[<ul>
+<li>结束了研一的暑假生活，又要开始新的学期。虽然已经上了研究生，但是发现自己好像许多东西都需要学习（不是好像，是本来就是）。开始新的<br>学期，就要给自己一个小小的目标，step by step and make it。在给自己一个目标前，我想先总结一下自己的暑假。</li>
+<li>暑假过得不紧不慢，回到家里面发现一个“严重”的问题：前几年，亲戚见面就是聊孩子结婚的事情，以后这几年里面，家里面的孩子就都陆陆续续结婚了。现在又开始聊小孩，结果回家又添了一代人。我呢？以读书为借口拒绝回答任何人的提问，其实自己根本就没考虑过这些事。等到了晚上自己琢磨这些事情时，才发现时间过得好快，总感觉自己就是个孩子还怎么成家立业。我想平常做事情时，多考虑多想想。有一次父亲和一位叔叔谝旱传时听到一句比较给力的：“我们这一代人，吃的23的人，根本就不知道啥叫长大。谁家村里要是有一场电影，就赶紧端哈板凳就去凑热闹去，屋里有啥事还是有爹扛着呢，自己又不用操啥心。等到自己结婚了，爸妈都奏不动了，家里的重担、孩子、老婆，家里面的一切都需要自己去照看，慢慢地就开始考虑事情和长大了。”我接着话茬说道：“我们这一代人，念书念的多结婚也接的迟，所以感觉没有你那辈人成熟早。”我叔说语重心长的说：“那你话不对，现在这娃毕了业，房子车子孩子，这三座大山压到娃头上，把娃压得都喘不过气。”我爸接到：“是的，现在娃娃也不容易。”从这次对话中，我深刻地感受到自己身上责任重大。暑假里面最让我高兴的事莫过于，接着在看《平凡的世界》，路遥这是个陕西作家中的奇才。感觉每一个人物都是鲜活的有血有肉的，把一个穷山沟沟的事情，穿插在大的历史中，让我这个没有生活在那个年代的陕西娃，对这个时期有了新的了解。还有感觉路遥那些大的故事框架清晰明朗，但是一些小的语言技巧也显出他的语言功底。譬如：孙少平，孙少安（平平安安），金俊文，金俊武，金俊斌（文武）。这些名字起得，那叫一个高明。还有双水村。<a href="http://www.pingfandeshijie.com/" target="_blank" rel="external">《平凡的世界》</a></li>
+<li>这学期的任务：还是以学习为主，学一些自己没有接触过得。</li>
+</ul>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">身体也要注意投资，多运动。</div><div class="line">自己以后的事情，也要多考虑考虑。</div><div class="line">手头的事情，抓紧时间做完。</div><div class="line">学习<span class="keyword">python</span>，不成为专业的程序猿。但是要把它当做一个工具使用。</div><div class="line">数据处理，这一块平常工作学习都会用到。</div><div class="line">硬件方面，看见好玩的好看的，也可以练习练习。</div><div class="line">和同学朋友关系搞好。（经常联系，多打电话。）</div><div class="line">父母经常联系，聊天。</div></pre></td></tr></table></figure>
+
+]]></content>
+    
+    
+      <category term="生活" scheme="http://wangang.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Python GUI编程]]></title>
@@ -34,30 +54,6 @@
 <ul>
 <li><a href="http://effbot.org/tkinterbook/" target="_blank" rel="external">参考文档</a></li>
 </ul>
-]]></content>
-    
-    
-      <category term="Python" scheme="http://wangang.github.io/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[python类的学习]]></title>
-    <link href="http://wangang.github.io/2014/08/16/python%E7%B1%BB%E7%9A%84%E5%AD%A6%E4%B9%A0/"/>
-    <id>http://wangang.github.io/2014/08/16/python类的学习/</id>
-    <published>2014-08-16T04:13:54.000Z</published>
-    <updated>2014-08-16T13:06:50.000Z</updated>
-    <content type="html"><![CDATA[<ul>
-<li>在Python创建一个简单类如下：</li>
-</ul>
-<figure class="highlight Python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span>:</span> <span class="comment">#创建类</span></div><div class="line">	<span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, name, age)</span>:</span> <span class="comment">#创建构造函数</span></div><div class="line">		self.name = name</div><div class="line">		self.age = age</div><div class="line">	<span class="function"><span class="keyword">def</span> <span class="title">say</span><span class="params">(self)</span>:</span> <span class="comment">#创建函数</span></div><div class="line">		<span class="keyword">print</span> <span class="string">'Hello everyone!My name is %s,I am %d years old!'</span>%(self.name,self.age)</div><div class="line">		</div><div class="line">man = person(<span class="string">'wan'</span>, <span class="number">24</span>) <span class="comment">#进行实例化</span></div><div class="line">man.say()</div></pre></td></tr></table></figure>
-
-<ul>
-<li>我们使用class语句后跟类名，创建了一个新的类Person。在用类定义成对象时，会先调用<strong>init</strong>构造函数，以初始化对象的各属性。如该程序中的name与age。类的各个属性均可以在构造函数中定义，定义时只要加上对象指针就好了。创建类的函数say，实例化一个student，后面调用函数。</li>
-<li>Python类可以继承父类属性，形式为class类名(父类)，子类可以继承父类的所有方法和属性，也可以重载父类的成员函数及属性。</li>
-</ul>
-<figure class="highlight Python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Student</span><span class="params">(Person)</span>:</span> <span class="comment">#继承类Person</span></div><div class="line">	<span class="function"><span class="keyword">def</span> <span class="title">grade</span><span class="params">(self,name,age, grade)</span>:</span></div><div class="line">        self.name = name</div><div class="line">        self.age = age</div><div class="line">		self.grade = grade</div><div class="line">	<span class="function"><span class="keyword">def</span> <span class="title">say</span><span class="params">(self)</span>:</span> <span class="comment">#子类重载函数</span></div><div class="line">		<span class="keyword">print</span> <span class="string">'Hello everyone!My name is %s, I am %d years old!My grades are %d.'</span>%(self.name, self.age, self.grade)</div><div class="line">		</div><div class="line">aStudent = Student(<span class="string">'wan'</span>, <span class="number">24</span>, <span class="number">90</span>)</div><div class="line">aStudent.say()</div></pre></td></tr></table></figure>
-
 ]]></content>
     
     
