@@ -4,17 +4,13 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>Python GUI编程 | Always in the direction of the sea!</title>
+    <title>日志 | Always in the direction of the sea!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="Wan Gang">
     
-    <meta name="description" content="首先我们看一个简单的例子：
-
-12345from Tkinter import *root = Tk()w = Lable(root, text = &#39;Hello wrold&#39;)w.pack()root.mainloop()
-
-
-我们首先导入Tkinter模块，它包括我们需要的类和函数以及其它的内容">
+    <meta name="description" content="2014.8.19
+下午三点多到南昌，火车晚点一个多小时。不紧不慢的坐公交到学校，天空中还飘着毛毛细雨。到寝室里面收拾了东西，下午到了实验室。又要抓紧时间把今年暑假没完成的项目抓紧做，不能把时间浪费在一个事情上面。新的FPGA板子到了，测试挺给力的。希望自己加油！">
     
     
     
@@ -75,14 +71,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2014/08/16/Python-GUI编程/" title="Python GUI编程" itemprop="url">Python GUI编程</a>
+      <a href="/2014/08/19/日志/" title="日志" itemprop="url">日志</a>
   </h1>
   <p class="article-author">By
        
 		<a href="http://wangang.github.io/about" title="Wan Gang" target="_blank" itemprop="author">Wan Gang</a>
 		
   <p class="article-time">
-    <time datetime="2014-08-16T07:11:57.000Z" itemprop="datePublished"> 发表于 8月 16 2014</time>
+    <time datetime="2014-08-19T13:38:56.000Z" itemprop="datePublished"> 发表于 8月 19 2014</time>
     
   </p>
 </header>
@@ -92,24 +88,12 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#2014-8-19"><span class="toc-number">1.</span> <span class="toc-text">2014.8.19</span></a></li></ol>
 		
 		</div>
 		
-		<ul>
-<li>首先我们看一个简单的例子：</li>
-</ul>
-<figure class="highlight Python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> Tkinter <span class="keyword">import</span> *</div><div class="line">root = Tk()</div><div class="line">w = Lable(root, text = <span class="string">'Hello wrold'</span>)</div><div class="line">w.pack()</div><div class="line">root.mainloop()</div></pre></td></tr></table></figure>
-
-<ul>
-<li>我们首先导入Tkinter模块，它包括我们需要的类和函数以及其它的内容。利用第一句既可以简单的导入Tkinter所有到你的模块空间。接下来实例化一个Tk，它是一个很普通windows界面，有一个标题栏以及一些其它的描述。你在每一个程序里面只可以创建一个，而且它是必须首先创建的紧接着我们创建了一个作为root子类的Label。接着调用Pack方法，这就使Lable能够使适应text，而且能够被看到。但是我们必须输入事件循环中。当程序进入事件循环中，直到我们关闭窗口。这些意味着当进入主循环中时，Windows应用窗口即可出现。</li>
-<li>当你写一个很大的程序时，将你的代码做成一个或者多个类，下面这个例子就是将程序作为类。</li>
-</ul>
-<figure class="highlight Python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> Tkinter <span class="keyword">import</span> *</div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">App</span>:</span></div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, master)</span>:</span></div><div class="line">        frame = Frame(master)</div><div class="line">        frame.pack()</div><div class="line">        </div><div class="line">        self.button = Button(frame, text=<span class="string">'quit'</span>, fg=<span class="string">'red'</span>,command=frame.quit)</div><div class="line">        self.button.pack(side = LEFT)</div><div class="line">        self.hi_there = Button(frame, text=<span class="string">'Hello'</span>, command=self.say_hi)</div><div class="line">        self.hi_there.pack(side=LEFT)</div><div class="line">        </div><div class="line">        <span class="function"><span class="keyword">def</span> <span class="title">say_hi</span><span class="params">(self)</span>:</span></div><div class="line">            <span class="keyword">print</span> <span class="string">'hi there,everyone'</span></div><div class="line">            </div><div class="line">root = Tk()</div><div class="line">app = App(root)</div><div class="line">root.mainloop()</div></pre></td></tr></table></figure>
-
-<ul>
-<li><a href="http://effbot.org/tkinterbook/" target="_blank" rel="external">参考文档</a></li>
-</ul>
+		<h2 id="2014-8-19">2014.8.19</h2>
+<p>下午三点多到南昌，火车晚点一个多小时。不紧不慢的坐公交到学校，天空中还飘着毛毛细雨。到寝室里面收拾了东西，下午到了实验室。又要<br>抓紧时间把今年暑假没完成的项目抓紧做，不能把时间浪费在一个事情上面。新的FPGA板子到了，测试挺给力的。希望自己加油！</p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -118,7 +102,7 @@
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/Python/">Python</a>
+  <span></span> <a href="/tags/日志/">日志</a>
   </div>
 
 </div>
@@ -126,7 +110,7 @@
 
 <div class="article-share" id="share">
 
-  <div data-url="http://wangang.github.io/2014/08/16/Python-GUI编程/" data-title="Python GUI编程 | Always in the direction of the sea!" data-tsina="null" class="share clearfix">
+  <div data-url="http://wangang.github.io/2014/08/19/日志/" data-title="日志 | Always in the direction of the sea!" data-tsina="null" class="share clearfix">
   </div>
 
 </div>
@@ -135,19 +119,11 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2014/08/19/暑假结束，开始新的学习/" title="暑假结束，开始新的学习">
-  <strong>上一篇：</strong><br/>
-  <span>
-  暑假结束，开始新的学习</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2014/08/16/python类的学习/"  title="python类的学习">
+<a href="/2014/08/19/暑假结束，开始新的学习/"  title="暑假结束，开始新的学习">
  <strong>下一篇：</strong><br/> 
- <span>python类的学习
+ <span>暑假结束，开始新的学习
 </span>
 </a>
 </div>
@@ -166,7 +142,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#2014-8-19"><span class="toc-number">1.</span> <span class="toc-text">2014.8.19</span></a></li></ol>
  
   </div>
 
