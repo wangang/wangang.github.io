@@ -4,17 +4,14 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>Python GUI编程 | Always in the direction of the sea!</title>
+    <title>Quartus II使用8051软核 | Always in the direction of the sea!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="Wan Gang">
     
-    <meta name="description" content="首先我们看一个简单的例子：
+    <meta name="description" content="使用的软核源码由Oregano Systems 提供，软核源码地址。因为要使用8051软核，所以我们首先使用KeilC51写源码并且编译。源码如下：
 
-12345from Tkinter import *root = Tk()w = Lable(root, text = &#39;Hello wrold&#39;)w.pack()root.mainloop()
-
-
-我们首先导入Tkinter模块，它包括我们需要的类和函数以及其它的内容">
+12345678910111213141516171819#incldue &quot;reg51.h&quot;void delay_1s(){    unsigne">
     
     
     
@@ -75,14 +72,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2014/08/16/Python-GUI编程/" title="Python GUI编程" itemprop="url">Python GUI编程</a>
+      <a href="/2014/09/01/Quartus-II使用8051软核/" title="Quartus II使用8051软核" itemprop="url">Quartus II使用8051软核</a>
   </h1>
   <p class="article-author">By
        
 		<a href="http://wangang.github.io/about" title="Wan Gang" target="_blank" itemprop="author">Wan Gang</a>
 		
   <p class="article-time">
-    <time datetime="2014-08-16T07:11:57.000Z" itemprop="datePublished"> 发表于 8月 16 2014</time>
+    <time datetime="2014-09-01T15:02:14.000Z" itemprop="datePublished"> 发表于 9月 1 2014</time>
     
   </p>
 </header>
@@ -97,18 +94,13 @@
 		</div>
 		
 		<ul>
-<li>首先我们看一个简单的例子：</li>
+<li>使用的软核源码由<a href="http://www.oreganosystems.at/?page_id=96" target="_blank" rel="external">Oregano Systems</a> 提供，软核源码地址。因为要使用8051软核，所以我们首先使用KeilC51写源码并且编译。源码如下：</li>
 </ul>
-<figure class="highlight Python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> Tkinter <span class="keyword">import</span> *</div><div class="line">root = Tk()</div><div class="line">w = Lable(root, text = <span class="string">'Hello wrold'</span>)</div><div class="line">w.pack()</div><div class="line">root.mainloop()</div></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="preprocessor">#incldue "reg51.h"</span></div><div class="line"><span class="keyword">void</span> delay_1s()</div><div class="line">{</div><div class="line">    <span class="keyword">unsigned</span> <span class="keyword">int</span> i,j = <span class="number">0xfff</span>;</div><div class="line">     <span class="keyword">while</span>(i--)</div><div class="line">     {</div><div class="line">          j = <span class="number">0x30</span>;</div><div class="line">          <span class="keyword">while</span>(j--);</div><div class="line">     }</div><div class="line">}</div><div class="line">main()</div><div class="line">{     </div><div class="line">    <span class="keyword">unsigned</span> <span class="keyword">char</span> i;</div><div class="line">     <span class="keyword">while</span>(<span class="number">1</span>)</div><div class="line">    {</div><div class="line">          P1 = i++;</div><div class="line">         delay_1s();</div><div class="line">     }</div><div class="line">}</div></pre></td></tr></table></figure>
 
+<p>c++</p>
 <ul>
-<li>我们首先导入Tkinter模块，它包括我们需要的类和函数以及其它的内容。利用第一句既可以简单的导入Tkinter所有到你的模块空间。接下来实例化一个Tk，它是一个很普通windows界面，有一个标题栏以及一些其它的描述。你在每一个程序里面只可以创建一个，而且它是必须首先创建的紧接着我们创建了一个作为root子类的Label。接着调用Pack方法，这就使Lable能够使适应text，而且能够被看到。但是我们必须输入事件循环中。当程序进入事件循环中，直到我们关闭窗口。这些意味着当进入主循环中时，Windows应用窗口即可出现。</li>
-<li>当你写一个很大的程序时，将你的代码做成一个或者多个类，下面这个例子就是将程序作为类。</li>
-</ul>
-<figure class="highlight Python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> Tkinter <span class="keyword">import</span> *</div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">App</span>:</span></div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, master)</span>:</span></div><div class="line">        frame = Frame(master)</div><div class="line">        frame.pack()</div><div class="line">        </div><div class="line">        self.button = Button(frame, text=<span class="string">'quit'</span>, fg=<span class="string">'red'</span>,command=frame.quit)</div><div class="line">        self.button.pack(side = LEFT)</div><div class="line">        self.hi_there = Button(frame, text=<span class="string">'Hello'</span>, command=self.say_hi)</div><div class="line">        self.hi_there.pack(side=LEFT)</div><div class="line">        </div><div class="line">        <span class="function"><span class="keyword">def</span> <span class="title">say_hi</span><span class="params">(self)</span>:</span></div><div class="line">            <span class="keyword">print</span> <span class="string">'hi there,everyone'</span></div><div class="line">            </div><div class="line">root = Tk()</div><div class="line">app = App(root)</div><div class="line">root.mainloop()</div></pre></td></tr></table></figure>
-
-<ul>
-<li><a href="http://effbot.org/tkinterbook/" target="_blank" rel="external">参考文档</a></li>
+<li>上面的程序主要将i的值付给P1口，然后进行1s延时。在编译过程中主要注意以下问题：<br>1.编译时选择芯片时选择Oregano Systems<br>2.以及库文件使用，使用C51库文件。<br>3.后面由于要使用串口通讯，所以晶振的选择也很重要。<br>-完成HEX文件的生成，接下来进行MC8051软核的生成。将下载完成的软核VHDL源语言放入你的工程目录下：<br>1.将mc8051<em>core</em>.vhd文件改为mc8051<em>core.vhd及去掉后面的下划线。<br>2.添加源文件下面除*_cfg.vhd,mc8051_top_struc.vhd,mc8051_top</em>.vhd这些文件。<br>3.将mc8051_core.vhd设为顶层文件，开始综合编译。<br>4.新建顶层原理图，将刚才生成的8051_test.bdf添加进原理图中。<br>5.这样已经完成8051软核的处理，但是还需要存储器ROM,RAM，以及扩展RAM。<br>这样整个一个51系统构造完成，其实生成的软核还是有错误，中间找到一个博客。中间有些源码需要修改的。<a href="http://blog.sina.com.cn/s/blog_52e8baa40100t52i.html" target="_blank" rel="external">地址</a>，但是后续测试中还是有好多不支持的。所以放弃使用。</li>
 </ul>
   
 	</div>
@@ -118,7 +110,7 @@
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/Python/">Python</a>
+  <span></span> <a href="/tags/FPGA/">FPGA</a>
   </div>
 
 </div>
@@ -126,7 +118,7 @@
 
 <div class="article-share" id="share">
 
-  <div data-url="http://wangang.github.io/2014/08/16/Python-GUI编程/" data-title="Python GUI编程 | Always in the direction of the sea!" data-tsina="null" class="share clearfix">
+  <div data-url="http://wangang.github.io/2014/09/01/Quartus-II使用8051软核/" data-title="Quartus II使用8051软核 | Always in the direction of the sea!" data-tsina="null" class="share clearfix">
   </div>
 
 </div>
@@ -135,19 +127,11 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2014/08/19/暑假结束，开始新的学习/" title="暑假结束，开始新的学习">
-  <strong>上一篇：</strong><br/>
-  <span>
-  暑假结束，开始新的学习</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2014/08/16/python类的学习/"  title="python类的学习">
+<a href="/2014/08/19/日志/"  title="日志">
  <strong>下一篇：</strong><br/> 
- <span>python类的学习
+ <span>日志
 </span>
 </a>
 </div>
