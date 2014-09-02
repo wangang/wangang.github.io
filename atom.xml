@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Stay hungry,stay foolish!]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://wangang.github.io/"/>
-  <updated>2014-09-01T15:10:10.581Z</updated>
+  <updated>2014-09-02T14:12:23.812Z</updated>
   <id>http://wangang.github.io/</id>
   
   <author>
@@ -41,7 +41,7 @@
     <link href="http://wangang.github.io/2014/08/19/%E6%97%A5%E5%BF%97/"/>
     <id>http://wangang.github.io/2014/08/19/日志/</id>
     <published>2014-08-19T13:38:56.000Z</published>
-    <updated>2014-08-31T14:58:13.000Z</updated>
+    <updated>2014-09-02T14:12:05.000Z</updated>
     <content type="html"><![CDATA[<h2 id="2014-8-19">2014.8.19</h2>
 <p>下午三点多到南昌，火车晚点一个多小时。不紧不慢的坐公交到学校，天空中还飘着毛毛细雨。到寝室里面收拾了东西，下午到了实验室。又要抓紧时间把今年暑假没完成的项目抓紧做，不能把时间浪费在一个事情上面。新的FPGA板子到了，测试挺给力的。希望自己加油！</p>
 <h2 id="2014-8-20">2014.8.20</h2>
@@ -62,6 +62,11 @@
 <p>整个项目框架已经差不多整合完成，后面还有数据采集部分！项目做的差不多，心里感觉才明朗了好多，大师兄今天把他的那些宝贝交给我来保管！加油！</p>
 <h2 id="2014-8-31">2014.8.31</h2>
 <p>项目还有许多要改进的，现在必须抓紧时间把需要改进的地方做完。不能在把东西拖下去了，要开始一个新的东西，要是把一个东西搞得时间长，使得自己浪费时间、后面会产生一种厌恶感。写个技术总结，要不感觉学习的东西不扎实。今天大师兄走了，祝愿大师兄一路顺风，在国外好好混。苟富贵勿相忘，哈哈~~！</p>
+<h2 id="2014-9-2">2014.9.2</h2>
+<p>已经把时序控制的项目完成差不多，到时候听吴老师还要求修改的东西。现在要转向其他的内容学习，具体的内容如下：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="number">1</span>.语言学习（<span class="keyword">c</span>++、<span class="keyword">python</span>），还有大师兄以前程序的思想</div><div class="line"><span class="number">2</span>.DR的CT技术顺便看看，硬件大师兄差不多已经找好了，后续工作还没开展</div><div class="line"><span class="number">3</span>.有时间可以学习FPGA的数据快速采集</div></pre></td></tr></table></figure>
+
+<p>上面就是近期要学习的内容，感觉自己死看书，没有动手实践知识更容易掌握。要多加练习掌握。<br>今天上午忙了一上午，就是为了找找FPGA数据采集方面的知识，自己看看，但是后面又发现自己的学习路线有问题。自己的学习思路不明确。下午又被吴老师拉过去“搭起来”，以前的项目温度控制器坏了，别人让整修。遂又搞了一下午，晚上看别人技术博客，发现一个好的APP，网页版<a href="https://pomotodo.com/app/" target="_blank" rel="external">番茄工作法</a>。</p>
 ]]></content>
     
     
